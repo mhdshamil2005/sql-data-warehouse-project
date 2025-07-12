@@ -64,7 +64,7 @@ BEGIN
 		PRINT '>> Load Duration: ' + CAST (DATEDIFF(second,@start_time,@end_time) as nvarchar) +' seconds'
 		PRINT '--------------------------------------------';
 
-		
+	
 		SET @start_time = GETDATE();
 		PRINT '>> Truncating Table: bronze.crm_sales_details';
 		TRUNCATE TABLE bronze.crm_sales_details;
